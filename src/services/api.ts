@@ -33,7 +33,7 @@ export const login = async (
   password: string
 ): Promise<LoginResponseType> => {
   const requestData: LoginRequest = { email, password };
-
+ 
   const response = await fetch(`${BASE_URL}/login`, {
     method: "POST",
     headers: {
